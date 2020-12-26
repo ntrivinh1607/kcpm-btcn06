@@ -1,9 +1,9 @@
 var Triangle = require('./Triangle');
 var Point = require('./Point');
 const { distance } = require('./Point');
-const p1 = new Point(-3, 3);
-const p2 = new Point(0, -3);
-const p3 = new Point(3, 3);
+const p1 = new Point(2, 1);
+const p2 = new Point(7, 1);
+const p3 = new Point(4.5, 5.33012701892);
 const tri1 = new Triangle(p1, p2, p3);
 console.log(tri1.classify());
 console.log(Point.distance(p1, p2));

@@ -31,16 +31,16 @@ test('Kiểm tra phương thức tính chu vi tam giác vuông trên có chu vi 
     expect(tri1_1.perimeter()).toBe(12);
 });
 
-//Tam giác đều that kho' de chon so'
+//Tam giác đều
 const p4 = new Point(2, 1);
 const p5 = new Point(7, 1);
 const p6 = new Point(4.5, 5.33012701892);
 const tri2 = new Triangle(p4, p5, p6);
-test('Kiểm tra phương thức phân loại với tam giác cân', () => {
+test('Kiểm tra phương thức phân loại với tam giác đều', () => {
     expect(tri2.classify()).toStrictEqual({ code: 2, message: 'Tam giác đều' });
 });
-test('Kiểm tra phương thức tính chu vi của tam giác cân', () => {
-    expect(tri2.perimeter()).toBe(123);
+test('Kiểm tra phương thức tính chu vi của tam giác đều', () => {
+    expect(tri2.perimeter()).toBe(15);
 });
 
 //Tam giác cân
