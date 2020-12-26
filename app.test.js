@@ -37,7 +37,7 @@ const p5 = new Point(7, 1);
 const p6 = new Point(4.5, 5.33012701892);
 const tri2 = new Triangle(p4, p5, p6);
 test('Kiểm tra phương thức phân loại với tam giác đều', () => {
-    expect(tri2.classify()).toStrictEqual({ code: 2, message: 'Tam giác đều' });
+    expect(tri2.classify()).toStrictEqual({ code: 3, message: 'Tam giác đều' });
 });
 test('Kiểm tra phương thức tính chu vi của tam giác đều', () => {
     expect(tri2.perimeter()).toBe(15);
@@ -49,7 +49,7 @@ const p8 = new Point(10, 10);
 const p9 = new Point(15, 5);
 const tri3 = new Triangle(p7, p8, p9);
 test('Kiểm tra phương thức phân loại với tam giác cân', () => {
-    expect(tri3.classify()).toStrictEqual({ code: 3, message: 'Tam giác cân' });
+    expect(tri3.classify()).toStrictEqual({ code: 2, message: 'Tam giác cân' });
 });
 test('Kiểm tra phương thức tính chu vi của tam giác cân', () => {
     expect(tri3.perimeter()).toBe(24.14213562373095);
