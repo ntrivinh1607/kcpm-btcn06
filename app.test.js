@@ -88,5 +88,5 @@ test('Kiểm tra phương thức phân loại với trường hợp 3 cạnh kh�
     expect(tri6.classify()).toStrictEqual({ code: 0, message: 'Không phải tam giác' });
 });
 test('Kiểm tra phương thức tính chu vi với trường hợp 3 cạnh không tạo thành tam giác', () => {
-    expect(tri6.perimeter()).toBe('Khong phai tam giac');
+    expect(tri6.perimeter()).toBe('Không phải tam giác');
 });
