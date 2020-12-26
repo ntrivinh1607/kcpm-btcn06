@@ -1,0 +1,12 @@
+var Triangle = require('./Triangle');
+var Point = require('./Point');
+const { distance } = require('./Point');
+const p1 = new Point(-3, 3);
+const p2 = new Point(0, -3);
+const p3 = new Point(3, 3);
+const tri1 = new Triangle(p1, p2, p3);
+console.log(tri1.classify());
+console.log(Point.distance(p1, p2));
+console.log(Point.distance(p3, p2));
+console.log(Point.distance(p1, p3));
+console.log(tri1.perimeter());
