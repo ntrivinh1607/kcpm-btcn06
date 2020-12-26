@@ -13,11 +13,11 @@ module.exports = class Triangle {
         if( a<b+c && b<a+c && c<a+b ){ //3 cạnh tạo thành tam giác khi tổng hai cạnh bất kì luôn lớn hơn cạnh còn lại.
             if( a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b) //bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông
                 return {code:1, message:"Tam giác vuông"};
-            else if(a==b && b==c) //
+            else if(a==b && b==c) // 3 cạnh bằng nhau
                 return {code:2, message:"Tam giác đều"};
-            else if(a==b || a==c || b==c)
+            else if(a==b || a==c || b==c) // 2 cạnh bằng nhau
                 return {code:3, message:"Tam giác cân"};
-            else if(a*a > b*b+c*c || b*b > a*a+c*c || c*c > a*a+b*b)    
+            else if(a*a > b*b+c*c || b*b > a*a+c*c || c*c > a*a+b*b)  //tổng bình phương 1 cạnh lớn hơn 2 cạnh còn lại
                 return {code:4, message:"Tam giác tù"};
             else
                 return {code:5, message:"Tam giác nhọn"};
