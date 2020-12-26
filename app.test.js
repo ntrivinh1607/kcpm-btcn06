@@ -12,7 +12,7 @@ const p1 = new Point(0, 0);
 const p2 = new Point(0, 5);
 const p3 = new Point(5, 5);
 const tri1 = new Triangle(p1, p2, p3);
-test('Kiểm tra "tam giác vuông cân"', () => {
+test('Kiểm tra phương thức phân loại với tam giác vuông cân', () => {
     expect(tri1.classify()).toStrictEqual({ code: 1, message: 'Tam giác vuông cân' });
 });
 test('Kiểm tra tam giác có vuông cân trên với chu vi là 17.071067811865476', () => {
